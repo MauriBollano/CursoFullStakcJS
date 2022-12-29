@@ -14,9 +14,11 @@ body{
     margin: 0;
 }
 
-.cards-cointeiner{
-    display: grid;
-    grid-template-columns: repeat(auto-fill,240px);
+.cards-conteiner {
+    display: grid ;
+    grid-template-columns: repeat( auto-fill , 240px);
+    gap: 26px;
+    place-content: center;
 }
 
 .products-cards{
@@ -24,7 +26,52 @@ body{
 }
 
 .products-cards img{
-    width: 100%;
+    width: 240px;
     height: 240px;
     border-radius: 20px;
+    object-fit: cover;
+}
+.product-info{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+.product-info figure{
+    margin: 0;
+}
+.product-info figure img{
+    width: 36px;
+    height: 36px;
+}
+.cards-conteiner{
+    gap: 20px;
+}
+.product-info div p:nth-child(1){
+    font-size: var(--md);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+.product-info div p:nth-child(2){
+    font-size: var(--sm);
+    color: var(--very-light-pink);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width : 640px){
+    .cards-conteiner{
+        grid-template-columns: repeat( 2, 140px);
+    }
+    .products-cards{
+        width: 140px;
+    }
+    
+    .products-cards img{
+        width: 140px;
+        height: 140px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
 }
