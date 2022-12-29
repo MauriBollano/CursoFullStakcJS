@@ -1,0 +1,30 @@
+:root {
+    --very-light-pink: #C7C7C7;
+    --white: #ffffff;
+    --black: #000000;
+    --text-input-field: #f7f7f7;
+    --hospital-green: #acd9b2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+.cards-cointeiner{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,240px);
+}
+
+.products-cards{
+    width: 240px;
+}
+
+.products-cards img{
+    width: 100%;
+    height: 240px;
+    border-radius: 20px;
+}
